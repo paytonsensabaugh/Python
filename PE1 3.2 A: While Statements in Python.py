@@ -20,3 +20,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# is there anyway around the def main() and if__name__ == "__main__". I saw them when I was looking in python inst but I was wondering if there was another way around writing this code without them
