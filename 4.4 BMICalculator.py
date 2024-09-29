@@ -4,14 +4,10 @@ INCHES_TO_METERS = 0.0254
 
 
 def get_valid_number(prompt):
-    while True:
         try:
             user_input = input(prompt)  # Ask for user input
             number = float(user_input)  # Attempt to convert to float
             return number  # Return the valid number
-        except ValueError:
-            print("Invalid input. Please enter a valid number.")  # Handle invalid input
-
 
 def main():
     # Get weight in pounds from user
