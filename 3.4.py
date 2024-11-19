@@ -1,4 +1,4 @@
-# defining the Pet class without using __init__
+# defining the Pet class
 class Pet:
     # methods
     def get_kind(self):
@@ -27,7 +27,7 @@ class Pet:
         print(f"Breed: {self.breed}")
         print("------")
 
-# create three Pet objects without using __init__
+# create three Pet objects 
 pet1 = Pet()
 pet1.set_kind("Dog")
 pet1.set_breed("Golden Retriever")
