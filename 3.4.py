@@ -1,11 +1,5 @@
-# defining the Pet class
+# defining the Pet class without using __init__
 class Pet:
-    # initialize the pet's attributes
-    def __init__(self, kind, breed, name):
-        self.kind = kind  # Type of pet (e.g., dog, cat)
-        self.breed = breed  # Breed of the pet (e.g., Bulldog, Siamese)
-        self.name = name  # Name of the pet
-
     # methods
     def get_kind(self):
         return self.kind
@@ -33,16 +27,27 @@ class Pet:
         print(f"Breed: {self.breed}")
         print("------")
 
-# three Pet objects with different attributes
-pet1 = Pet(kind="Dog", breed="Golden Retriever", name="Buddy")
-pet2 = Pet(kind="Cat", breed="Siamese", name="Whiskers")
-pet3 = Pet(kind="Parrot", breed="Macaw", name="Polly")
+# create three Pet objects without using __init__
+pet1 = Pet()
+pet1.set_kind("Dog")
+pet1.set_breed("Golden Retriever")
+pet1.set_name("Buddy")
+
+pet2 = Pet()
+pet2.set_kind("Cat")
+pet2.set_breed("Siamese")
+pet2.set_name("Whiskers")
+
+pet3 = Pet()
+pet3.set_kind("Parrot")
+pet3.set_breed("Macaw")
+pet3.set_name("Polly")
 
 # calling the print_details method for each pet object
 pet1.print_details()
 pet2.print_details()
 pet3.print_details()
 
-#  __name__ special method
+# demonstrating the __name__ special method
 # display the name of the class
 print(f"The name of the class is: {Pet.__name__}")
